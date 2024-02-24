@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style type="text/css">
+   div .barea{
+      
+     
+        border-left:1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top:10px;
+    }
+
+
+</style>
+
+<div    >
+    <h1>房屋列表</h1>
+</div>
+<form>
+    <div class="row col-md-8 barea">
+        <div class="row " style="padding-top:10px;">
+       
+            <div class="col-md-2" style="text-align:right" ><label>房名</label></div>
+        <div class="col-md-4"><input type="text" class="form-control" id="houseName" name="houseName"></div>
+            <div class="col-md-2" style="text-align:right"><label>房屋Id</label></div>
+
+        <div class="col-md-4"><input type="text" class="form-control" id="houseId" name="houseId"></div>
+             
+        </div>
+        <div class="row " style="padding-top:10px;">
+
+            <div class="col-md-12" style="text-align:center"> <button type="button"  onclick="getHouseList()" class="btn btn-primary">Sign in</button></div>
+          
+
+        </div>
+    </div>
+</form>
+    <div class="row col-md-8 barea">
+
+        <table  data-toggle="table"   id="houseTable"  class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">房屋id</th>
+                    <th scope="col">房屋名稱</th>
+                    <th scope="col">房屋坪數</th>
+                    <th scope="col">房屋價格</th>
+                </tr>
+            </thead>
+         
+        </table>
+
+
+     </div>
+   <script>
+
+       function getHouseList() {
+
+
+       }
+
+
+   </script>
+
+
