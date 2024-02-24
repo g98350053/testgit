@@ -18,7 +18,7 @@
 
 
 </style>
-
+ 
 <div    >
     <h1>房屋列表</h1>
 </div>
@@ -35,36 +35,102 @@
         </div>
         <div class="row " style="padding-top:10px;">
 
-            <div class="col-md-12" style="text-align:center"> <button type="button"  onclick="getHouseList()" class="btn btn-primary">Sign in</button></div>
+            <div class="col-md-12" style="text-align:center"> <button type="button"  onclick="getHouseList()" class="btn btn-primary">查詢</button></div>
           
 
         </div>
     </div>
 </form>
     <div class="row col-md-8 barea">
-
-        <table  data-toggle="table"   id="houseTable"  class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">房屋id</th>
-                    <th scope="col">房屋名稱</th>
-                    <th scope="col">房屋坪數</th>
-                    <th scope="col">房屋價格</th>
-                </tr>
-            </thead>
-         
-        </table>
+    <table id="table"></table>
+     
 
 
      </div>
    <script>
 
-       function getHouseList() {
+   
+
+
+    function pageInit() {
+           
+
+        $('#table').bootstrapTable({
+            toolbar: "#toolbar",
+            columns: [ //欄位設定
+                { field: 'houseId', title: '房屋代號', align: 'center', },
+                { field: 'houseName', title: '房屋名稱', align: 'center'  },
+                {
+                    field: 'houseSize', title: '房屋坪數', align: 'left', formatter: function (val) {
+                        return val + "坪";
+                    }
+                },
+                { field: 'housePrice', title: '房屋價格', align: 'left', formatter: function (val) {
+                    return val+"萬";
+                } },
+
+            ],
+            classes: 'table',
+            data: {},//所有資料
+            // uniqueId: '', //哪一個欄位是key
+            // sortName: '', //依照那個欄位排序
+            // height: 450,
+              pagination: true, //使否要分頁
+
+            // //可於ToolBar上顯示的按鈕
+            // showColumns: true, //顯示/隱藏哪些欄位
+            // showToggle: false, //名片式/table式切換
+            // showPaginationSwitch: false, //分頁/不分頁切換
+            // showRefresh: true, //重新整理
+            // search: false, //查詢
+
+            
+             pageSize: 10, //一頁顯示幾筆
+             pageList: [10, 20, 50, 100], //一頁顯示幾筆的選項
+
+            formatRecordsPerPage: function (pageSize) {
+                return '&nbsp;&nbsp;每頁顯示' + pageSize + '筆';
+            },
+            formatShowingRows: function (fromIndex, toIndex, totalSize) {
+                //目前第幾頁
+                var currentPage = Math.ceil(fromIndex / this.pageSize);
+                //總共幾頁
+                var totalPageCount = Math.ceil(totalSize / this.pageSize);
+                return '第' + currentPage + '頁&nbsp;&nbsp;共' + totalPageCount + '頁';
+            }
+        });
 
 
        }
 
+       function getHouseList() {
+        const data = {
+            HouseName: $("#houseName").val(),
+            HouseId: $("#houseId").val(),
+        }
+ 
 
+        console.log(data);
+        $.ajax({
+            url: "Home/GetHouseList",
+            method: "POST",
+            dataType: "json",
+            data: data,
+            success: function (data) {
+                // 成功
+                console.log(data);
+ 
+                $('#table').bootstrapTable('load', data);
+            },
+            error: function (xhr, status, error) {
+                // 失敗
+            }
+        });
+       }
+    $(document).ready(function () {
+        pageInit();
+    });
+   
    </script>
 
 

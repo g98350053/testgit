@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\gittest\\testgit\\testyungching\\testyungching\\wwwroot\\lib\\bootstrap-table.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table.js"
+    },
+    {
       "Id": "D:\\gittest\\testgit\\testyungching\\testyungching\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ixYk01roRFVXUz7stAQS2qymC+z76GoG3pzfTiH/74I=",
+  "Hash": "OTIkWd2yKLW9HCjapmozTLU7mHDejzRqEVsMeCaOCMA=",
   "Source": "testyungching",
   "BasePath": "_content/testyungching",
   "Mode": "Default",
@@ -965,6 +965,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "D:\\gittest\\testgit\\testyungching\\testyungching\\wwwroot\\lib\\bootstrap-table.js",
+      "SourceId": "testyungching",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\gittest\\testgit\\testyungching\\testyungching\\wwwroot\\",
+      "BasePath": "_content/testyungching",
+      "RelativePath": "lib/bootstrap-table.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap-table.js"
     },
     {
       "Identity": "D:\\gittest\\testgit\\testyungching\\testyungching\\wwwroot\\lib\\jquery\\dist\\jquery.js",

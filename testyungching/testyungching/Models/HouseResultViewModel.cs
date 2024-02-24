@@ -8,6 +8,11 @@ namespace testyungching.Models
         /// </summary>
         public double HouseSize { get; set; }
 
-       
+        /// <summary>
+        /// ©Ð«Î»ù®æ
+        /// </summary>
+        public double HousePrice { get; set; }
+
+
     }
 }

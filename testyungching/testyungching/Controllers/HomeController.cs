@@ -29,11 +29,15 @@ namespace testyungching.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [HttpPost]
         public JsonResult GetHouseList(HouseSearchViewModel model)
         {
             List<HouseResultViewModel> result = new List<HouseResultViewModel>();
+            for (int i=0;i<100;i++)
+            {
+                result.Add(new HouseResultViewModel() { HouseId = $"222{i}", HouseName = $"´ú¸Õ©Ð«Î¦W{i}", HouseType = 1, HouseSize = 18.2, HousePrice = 330 });
 
-
+            }
 
 
 
