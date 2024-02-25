@@ -6,12 +6,12 @@ namespace testyungching.Models
         /// <summary>
         /// 房屋大小
         /// </summary>
-        public double HouseSize { get; set; }
+        public decimal HouseSize { get; set; }
 
         /// <summary>
         /// 房屋價格
         /// </summary>
-        public double HousePrice { get; set; }
+        public decimal HousePrice { get; set; }
 
 
     }

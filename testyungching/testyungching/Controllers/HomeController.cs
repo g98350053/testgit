@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using testyungching.Bussinse;
 using testyungching.Models;
 
 namespace testyungching.Controllers
@@ -33,11 +34,14 @@ namespace testyungching.Controllers
         public JsonResult GetHouseList(HouseSearchViewModel model)
         {
             List<HouseResultViewModel> result = new List<HouseResultViewModel>();
-            for (int i=0;i<100;i++)
-            {
-                result.Add(new HouseResultViewModel() { HouseId = $"222{i}", HouseName = $"測試房屋名{i}", HouseType = 1, HouseSize = 18.2, HousePrice = 330 });
+           var oHouseData =  new HouseData();
+            result =  oHouseData.GetHouseData(model).Select(x=>new HouseResultViewModel() { HouseName = x.HouseName, HouseId = x.HouseId
+            , HousePrice = x.HousePrice, HouseSize = x.HouseSize, HouseType = x.HouseType  }).ToList();
+            //for (int i=0;i<100;i++)
+            //{
+            //    result.Add(new HouseResultViewModel() { HouseId = $"222{i}", HouseName = $"測試房屋名{i}", HouseType = 1, HouseSize = (decimal)18.2, HousePrice = 330 });
 
-            }
+            //}
 
 
 

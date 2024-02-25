@@ -29,3 +29,12 @@ D:\gittest\testgit\testyungching\testyungching\obj\Debug\net8.0\refint\testyungc
 D:\gittest\testgit\testyungching\testyungching\obj\Debug\net8.0\testyungching.pdb
 D:\gittest\testgit\testyungching\testyungching\obj\Debug\net8.0\testyungching.genruntimeconfig.cache
 D:\gittest\testgit\testyungching\testyungching\obj\Debug\net8.0\ref\testyungching.dll
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\Dapper.dll
+D:\gittest\testgit\testyungching\testyungching\obj\Debug\net8.0\testyungching.csproj.AssemblyReference.cache
+D:\gittest\testgit\testyungching\testyungching\obj\Debug\net8.0\testyungching.csproj.CopyComplete
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\gittest\testgit\testyungching\testyungching\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

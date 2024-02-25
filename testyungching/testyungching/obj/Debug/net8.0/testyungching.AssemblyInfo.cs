@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("testyungching")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33199385d2c1d65cdca2cddaa6be9fbb2362f3f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+911141eb61ca7a5b20722d34dd57f8a3da616c9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("testyungching")]
 [assembly: System.Reflection.AssemblyTitleAttribute("testyungching")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
